@@ -6,24 +6,23 @@ html {
 body {
   font-size:20px;
   background-color: #f2f0e6;
-  
 }
 
 .nav {
-  background-color: #e2a42e;
+  background-color: #f7c8ed;
   display:flex;
   justify-content:space-evenly;
   padding: 10px;
-  border: 5px inset #e2a42e;
+  border: 5px inset #f7c8ed;
 }
 
 .credits {
-  background-color: #e2a42e;
+  background-color: #f7c8ed;
   display:flex;
   justify-content:space-evenly;
   padding: 10px;
   margin-bottom:10px;
-  border: 5px inset #e2a42e;
+  border: 5px inset #f7c8ed;
 }
 
 
@@ -31,11 +30,6 @@ body {
   text-align:center;
   padding: 5px;
   font-family: 'Rubik Gemstones', cursive;
-  color: yellow;
-}
-
-.mainTitle {
-    color: #e9e325
 }
 
 .desc {
@@ -47,7 +41,7 @@ body {
   padding-right:200px;
   padding-left:200px;
   font-family:'Courgette', cursive ;
-  color: #a22b2b;
+  color: #993361;
 }
 
 .startHere {
@@ -58,14 +52,13 @@ body {
 }
 
 .rats > *{ 
-display:flex;
-justify-content: center;
+  display:flex;
+  justify-content: center;
   margin: auto;
-
   width: 400px;
   height: 400px; 
-object-fit:cover;
-border-style: solid;
+  object-fit:cover;
+  border-style: solid;
   border-color: #fff;
   border-radius: 50px;
   border-width: 10px;
@@ -100,7 +93,7 @@ button {
   background-color: #f5f5f5;
   transition-duration: 0.4s;
   font-family: 'Rubik Gemstones', cursive;
-  color: #a22b2b;
+  color: #993361;
 }
 
 button:hover {
@@ -111,16 +104,13 @@ button:hover {
   text-align:center;
 }
 
-
-
-
 /*make links have no underline*/
 a:link { 
-  color: #a22b2b;
+  color: #993361;
   text-decoration: none;
 }
 a:visited { 
-  color: #a22b2b; 
+  color: #993361; 
   text-decoration: none;
 }
 a:active { 
@@ -144,7 +134,6 @@ a:active {
   color: #ff14c0;
   text-decoration: underline
 }
-
 
 .likeRats{
   background-image: url("/images/like-rats-background.jpg");
