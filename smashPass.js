@@ -1,4 +1,3 @@
-
 let monster = {
   name: "monster-rat",
   score: 0,
@@ -47,6 +46,10 @@ let jerry = {
   image: "images/jerry-mouse.jpg"
 }
 
+function changeImage(){
+  i++;
+  document.querySelector(".currImage").src =     mice[i].image;
+}
 
 let mice = [
   monster, chuck, subway, splinter, mickey, minnie, remy, jerry 
@@ -57,37 +60,26 @@ document.querySelector(".currImage").src = mice[i].image;
 
 let ratsDapped = 0;
 document.querySelector(".Dap").onclick = function(){
- checkEnd(i);
-  i++;
-document.querySelector(".currImage").src = mice[i].image;
+  checkEnd(i);
+  changeImage()
   ratsDapped++;
-
 }
 
 document.querySelector(".Slap").onclick = function(){
   checkEnd(i);
-   i++;
-document.querySelector(".currImage").src = mice[i].image;
-   
-}
-
-let ratsSlapped = 0;
-function pass(){
-ratsSlapped++;
+  changeImage()
 }
 
 function checkEnd(i){
-  console.log(ratsDapped);
   if(i === mice.length-1){
     if(ratsDapped <4){
-  window.location.href="hateRats.html";
+      window.location.href="hateRats.html";
     }
-     else if(ratsDapped <7){
-         window.location.href="neutralRat.html";
-
+    else if(ratsDapped <7){
+      window.location.href="neutralRat.html";
     }
-     else{
-  window.location.href="likeRats.html";
+    else{
+      window.location.href="likeRats.html";
     }
   }
 }

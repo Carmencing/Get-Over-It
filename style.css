@@ -5,28 +5,40 @@ html {
 
 body {
   font-size:20px;
-  background-color: #c2c2c2;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f2f0e6;
+  
 }
 
 .nav {
-  background-color: #ffb8de;
+  background-color: #e2a42e;
   display:flex;
   justify-content:space-evenly;
   padding: 10px;
-  border: 5px inset #ffa8d7;
+  border: 5px inset #e2a42e;
 }
 
 .credits {
-  background-color: #ffb8de;
+  background-color: #e2a42e;
   display:flex;
   justify-content:space-evenly;
   padding: 10px;
-  border: 5px inset #ffa8d7;
+  margin-bottom:10px;
+  border: 5px inset #e2a42e;
 }
 
 
-.title, .desc {
+.title {
+  text-align:center;
+  padding: 5px;
+  font-family: 'Rubik Gemstones', cursive;
+  color: yellow;
+}
+
+.mainTitle {
+    color: #e9e325
+}
+
+.desc {
   text-align:center;
   padding: 5px;
 }
@@ -34,16 +46,11 @@ body {
 .desc{
   padding-right:200px;
   padding-left:200px;
+  font-family:'Courgette', cursive ;
+  color: #a22b2b;
 }
 
 .startHere {
-  display:flex;
-  justify-content:space-evenly;
-  padding-bottom: 20px;
-  border-radius:1000px;
-}
-
-.goBack {
   display:flex;
   justify-content:space-evenly;
   padding-bottom: 20px;
@@ -64,6 +71,23 @@ border-style: solid;
   border-width: 10px;
 } 
 
+.groupPhoto {
+  display:flex;
+  justify-content: center;
+  height: 100%;
+  margin:auto;
+  padding-top:10px;
+  object-fit:cover;
+}
+
+.curtis > *{
+  display:flex;
+  justify-content: center;
+  margin:auto;
+  object-fit:cover;
+  padding-top:10px;
+}
+
 .buttons { 
   display:flex;
   justify-content:space-evenly;
@@ -76,7 +100,7 @@ button {
   background-color: #f5f5f5;
   transition-duration: 0.4s;
   font-family: 'Rubik Gemstones', cursive;
-  color: #bda400
+  color: #a22b2b;
 }
 
 button:hover {
@@ -89,20 +113,44 @@ button:hover {
 
 
 
+
 /*make links have no underline*/
 a:link { 
-  color: black;
+  color: #a22b2b;
   text-decoration: none;
 }
 a:visited { 
-  color: black; 
+  color: #a22b2b; 
   text-decoration: none;
 }
 a:active { 
-  color: black; 
+  color: #a22b2b; 
   text-decoration: none; 
 }
 
-.link{
-  color: white;
+.link:link{
+  color: #ff14c0;
+  text-decoration: underline
 }
+.link:visited{
+  color: #d1159f;
+  text-decoration: underline
+}
+.link:active{
+  color: #ff14c0;
+  text-decoration: underline
+}
+.link:hover{
+  color: #ff14c0;
+  text-decoration: underline
+}
+
+
+.likeRats{
+  background-image: url("/images/like-rats-background.jpg");
+}
+
+.madeByLink:link{
+  text-decoration: underline;
+}
+
